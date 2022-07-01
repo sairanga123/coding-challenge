@@ -9,7 +9,7 @@ The API and its documentation are located here:  https://gorest.co.in/
 
 Be sure to read the entire page, as it includes details that will be required to finish this exercise.
 
-Fork this repo and do all of your work against that fork. When you are finished, submit a pull request and notify a member of our team.
+Fork this repo and do all of your work against that fork. When you are finished, do not submit a pull request.  Notify a member of our team that you are finished and we will review your code together.
 
 ### Instructions
 
