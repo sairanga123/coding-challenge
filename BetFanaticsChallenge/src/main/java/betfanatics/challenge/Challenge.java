@@ -25,7 +25,7 @@ public class Challenge {
 
         try {
 
-            // use HTTP Url connection in order to make get call and get JSON Object
+            // use OkHTTP in order to make get call and get JSON Object
             // 1) Make the request to get page 3 of the users (?page=3) in the url
             OkHttpClient client = new OkHttpClient().newBuilder()
                     .build();
