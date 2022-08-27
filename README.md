@@ -23,5 +23,6 @@ Using the REST API endpoints documented in the link in the previous section:
 7. Attempt to retrieve a nonexistent user with ID 5555.  Log the resulting http response code.
 8. Write unit tests for all code, mocking out calls to the actual API service.
 
+Below are the results for the coding challenge tests: 
 
-
+<img width="1394" alt="Screen Shot 2022-08-26 at 6 19 02 PM" src="https://user-images.githubusercontent.com/24307434/187010773-f108b86f-fc0f-4f48-a984-2e9cd82196aa.png">
