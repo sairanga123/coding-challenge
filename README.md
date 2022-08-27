@@ -22,3 +22,6 @@ Using the REST API endpoints documented in the link in the previous section:
 6. Delete that user.
 7. Attempt to retrieve a nonexistent user with ID 5555.  Log the resulting http response code.
 8. Write unit tests for all code, mocking out calls to the actual API service.
+
+
+
