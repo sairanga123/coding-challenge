@@ -10,7 +10,7 @@ public class BetFanaticsChallenge {
     public static void main(String[] args) {
         Challenge challenge = new Challenge();
         try {
-            // 1-3. get sorted users from page three
+            // 1-3. get sorted users from page three and print out number of total pages  
             List<JSONObject> users = challenge.getSortedUsersFromPageThree();
             System.out.println("Users sorted by name on page 3 : " + users.toString());
             //4. get the name of the last user
