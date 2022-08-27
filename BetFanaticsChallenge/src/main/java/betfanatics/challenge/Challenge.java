@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class Challenge {
-    final String ACCESS_KEY = "ec55b886010d2a10dee93bcf93fe2e3efd315c9dc048c4db0ba6bf0cc2232b5e";
+    private final String ACCESS_KEY = "ec55b886010d2a10dee93bcf93fe2e3efd315c9dc048c4db0ba6bf0cc2232b5e";
 
     public Challenge() {
     }
