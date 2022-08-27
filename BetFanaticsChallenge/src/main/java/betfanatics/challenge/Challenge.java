@@ -43,7 +43,7 @@ public class Challenge {
 
             // 2) print out the pagination total - total number of pages from the previous request
             int paginationTotal = Integer.parseInt(response.headers().get("x-pagination-pages").toString());
-            System.out.println(paginationTotal);
+            System.out.println("Number of Total Pages: " + paginationTotal);
 
             //3) Construct a data structure to hold users and sort them -> return the sorted list of users
             for(int i = 0; i < usersFromPageThree.size(); i++) {
@@ -71,7 +71,7 @@ public class Challenge {
      */
     public String getLastUserFromList(List<JSONObject> users) {
         // 4. log out the name of the last user
-        System.out.println(users.get(users.size()-1).get("name").toString());
+        System.out.println("Last User Name : " + users.get(users.size()-1).get("name").toString());
         return users.get(users.size()-1).get("name").toString();
     }
 
@@ -83,7 +83,7 @@ public class Challenge {
     public JSONObject updateLastUserNameAndSave(List<JSONObject> users) {
         JSONObject changedNameObj = null;
         int lastUserId = Integer.parseInt(users.get(users.size()-1).get("id").toString());
-        System.out.println(lastUserId);
+        System.out.println("Last User Id to Delete: " + lastUserId);
         String urlBuilder = "https://gorest.co.in/public/v2/users/" + lastUserId + "?access-token=" + ACCESS_KEY;
 
         // Set new name of user and save it as Peter Parker for that user id
@@ -156,7 +156,7 @@ public class Challenge {
                     .build();
             Response response = client.newCall(request).execute();
             // 7. log out the response code
-            System.out.println(response.code());
+            System.out.println("Response status from call: " + response.code());
             return response.code();
         } catch (Exception e) {
             e.printStackTrace();

@@ -33,7 +33,7 @@ JSONObject changeNameObject = updateLastUserNameAndSave(users);
 deleteUserByUserObject(changeNameObject);
 
 7. Request for NonExistent user
-int responseStatusFromCall = getUserById("5555");
+int responseStatusFromCall = getResponseCodeById("5555");
 
  */
 
