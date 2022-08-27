@@ -70,6 +70,8 @@ public class Challenge {
      * @return String
      */
     public String getLastUserFromList(List<JSONObject> users) {
+        // 4. log out the name of the last user
+        System.out.println(users.get(users.size()-1).get("name").toString());
         return users.get(users.size()-1).get("name").toString();
     }
 
@@ -153,6 +155,8 @@ public class Challenge {
                     .addHeader("X-Pagination-Pages", "")
                     .build();
             Response response = client.newCall(request).execute();
+            // 7. log out the response code
+            System.out.println(response.code());
             return response.code();
         } catch (Exception e) {
             e.printStackTrace();

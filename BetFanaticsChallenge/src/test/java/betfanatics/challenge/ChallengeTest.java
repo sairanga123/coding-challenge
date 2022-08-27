@@ -66,6 +66,7 @@ public class ChallengeTest extends TestCase {
         String lastUser = "";
         try {
             userList  = challenge.getSortedUsersFromPageThree();
+            // 4. Logs out the last user after the sorting 
             lastUser = challenge.getLastUserFromList(userList);
         } catch (Exception e) {
             e.printStackTrace();
